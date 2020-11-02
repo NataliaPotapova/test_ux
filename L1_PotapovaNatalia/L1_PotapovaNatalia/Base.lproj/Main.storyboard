@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="L1_PotapovaNatalia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ENTER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Czf-fs-hJ3">
+                                <rect key="frame" x="116" y="124" width="183" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="login" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sB0-ZN-naj">
+                                <rect key="frame" x="98" y="199" width="220" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hwe-3r-j29">
+                                <rect key="frame" x="98" y="263" width="220" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="STU-Pf-9kI">
+                                <rect key="frame" x="157" y="322" width="113" height="57"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sB0-ZN-naj" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="98" id="0ay-2R-dtQ"/>
+                            <constraint firstItem="STU-Pf-9kI" firstAttribute="top" secondItem="hwe-3r-j29" secondAttribute="bottom" constant="25" id="1B1-kL-JiX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Czf-fs-hJ3" secondAttribute="bottom" constant="700" id="5kz-Ib-zFb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="sB0-ZN-naj" secondAttribute="trailing" constant="96" id="5y5-R5-jEp"/>
+                            <constraint firstItem="sB0-ZN-naj" firstAttribute="top" secondItem="Czf-fs-hJ3" secondAttribute="bottom" constant="25" id="6YS-j3-dAr"/>
+                            <constraint firstItem="hwe-3r-j29" firstAttribute="top" secondItem="sB0-ZN-naj" secondAttribute="bottom" constant="30" id="739-6Q-fl8"/>
+                            <constraint firstItem="STU-Pf-9kI" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="157" id="BLg-Le-T43"/>
+                            <constraint firstItem="sB0-ZN-naj" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="EQ1-oa-Nfk"/>
+                            <constraint firstItem="hwe-3r-j29" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="98" id="ERk-Rc-1VH"/>
+                            <constraint firstItem="Czf-fs-hJ3" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Tdw-p7-yrv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="hwe-3r-j29" secondAttribute="trailing" constant="96" id="Ux6-tV-OkS"/>
+                            <constraint firstItem="Czf-fs-hJ3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="Wbh-cH-GwT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="STU-Pf-9kI" secondAttribute="bottom" constant="16" id="dUt-So-pkh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="STU-Pf-9kI" secondAttribute="trailing" constant="144" id="gcb-4z-vGH"/>
+                            <constraint firstItem="hwe-3r-j29" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="kAt-Hs-FMB"/>
+                            <constraint firstItem="Czf-fs-hJ3" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="131" id="p2F-GH-TAY"/>
+                            <constraint firstItem="sB0-ZN-naj" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="zaQ-zf-0wb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="Czf-fs-hJ3" secondAttribute="trailing" constant="131" id="zgS-uB-eRB"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="5kz-Ib-zFb"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="79.6875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
